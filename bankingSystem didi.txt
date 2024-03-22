@@ -1,0 +1,95 @@
+#bankingSystem
+accountNo = 0
+CusName = ""
+BCode = " "
+Mobile = 0
+Bal = 1000
+def createAccounts():
+    accountNo = int(input("enter the account number:"))
+    CusName = input("enter your name:")
+    BCode = input("enter branch code:")
+    Mobile = int(input("enter your mobile number:"))
+    Bal = int(input("enter your current balance:"))
+
+def ShowAcntdetails():
+    print("account number",accountNo)
+    print("name of the customer", CusName)
+    print("ifsc code", BCode)
+    print("enter your mob no.", Mobile)
+    print("enter your current balance", Bal)
+def Deposit(amount,Bal):
+    Bal += amount
+    print("deposit amount:", amount)
+    print("current balance:",Bal)
+
+
+def Withdraw(amount,Bal):
+    Bal -= amount
+    print("withdrawn amount:", amount)
+    print("current balance:", Bal)
+
+
+#main
+print("""
+            1.create an account
+
+            2.deposit
+            3.withdrawal """)
+choice = int(input("please enter your choice:"))
+if (choice==1):
+    createAccounts()
+elif (choice==2):
+    amount = int(input("enter the amount to deposit:"))
+    Deposit(amount,Bal)
+elif(choice==3):
+    amount = int(input("enter the amount to withdraw"))
+    Withdraw(amount,Bal)   #bankingSystem
+accountNo = 0
+CusName = ""
+BCode = " "
+Mobile = 0
+Bal = 1000
+def createAccounts():
+    accountNo = int(input("enter the account number:"))
+    CusName = input("enter your name:")
+    BCode = input("enter branch code:")
+    Mobile = int(input("enter your mobile number:"))
+    Bal = int(input("enter your current balance:"))
+
+def ShowAcntdetails():
+    print("account number",accountNo)
+    print("name of the customer", CusName)
+    print("ifsc code", BCode)
+    print("enter your mob no.", Mobile)
+    print("enter your current balance", Bal)
+def Deposit(amount,Bal):
+    Bal += amount
+    print("deposit amount:", amount)
+    print("current balance:",Bal)
+
+
+def Withdraw(amount,Bal):
+    Bal -= amount
+    print("withdrawn amount:", amount)
+    print("current balance:", Bal)
+
+
+#main
+print("""
+            1.create an account
+
+            2.deposit
+            3.withdrawal """)
+choice = int(input("please enter your choice:"))
+if (choice==1):
+    createAccounts()
+elif (choice==2):
+    amount = int(input("enter the amount to deposit:"))
+    Deposit(amount,Bal)
+elif(choice==3):
+    amount = int(input("enter the amount to withdraw"))
+    Withdraw(amount,Bal)
+
+else:
+   
+  print("invalid choice")
